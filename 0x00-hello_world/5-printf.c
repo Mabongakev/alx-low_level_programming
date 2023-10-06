@@ -1,9 +1,8 @@
 #include <stdio.h>
-
-/*
- * main - Use of printf
+/**
+ * main - Entry point
  *
- * Return: 0
+ * Return: Always 0 (Success)
  */
 
 int main(void)

@@ -2,14 +2,16 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 
 int main(void)
 {
-    	for (k = 'a' ; k <= 'z' ; k++)
-			putchar(k)
-		putchar('\n')
-    	return (0);
+	char k;
+
+	for (k = 'a' ; k <= 'z' ; k++)
+		putchar(k);
+	putchar('\n');
+	return (0);
 }
 

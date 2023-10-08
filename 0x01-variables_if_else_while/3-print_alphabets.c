@@ -11,7 +11,7 @@ int main(void)
 
 	for (k = 'a' ; k <= 'z' ; k++)
 		putchar(k);
-	for (k = 'A' ; k <= 'A' ; k++)
+	for (k = 'A' ; k <= 'Z' ; k++)
 		putchar(k);
 	putchar('\n');
 	return (0);

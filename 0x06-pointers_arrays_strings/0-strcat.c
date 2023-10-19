@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * *_strcat - a  function appends the src string to the dest string
- * *dest: last string
- * *src: source string
+ * _strcat - a  function appends the src string to the dest string
+ * @dest: last string
+ * @src: source string
  * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
@@ -15,7 +15,7 @@ char *_strncat(char *dest, char *src, int n)
 		destlen++;
 	for (k = 0 ; scrlen[k] != '\0' ; k++)
 		srclen++;
-	for (k = 0 ; <= srclen ; k++)
+	for (k = 0 k ; <= srclen ; k++)
 		dest[destlen + 1] = scrlen[k];
 	return (dest);
 }

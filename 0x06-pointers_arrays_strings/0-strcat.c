@@ -5,17 +5,20 @@
  * @src: source string
  * Return: dest
  */
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
 	int destlen = 0;
 	int scrlen = 0;
-	int k;
 
-	for (k = 0 ; destlen[k] != '\0' ; k++)
+	while (dest[destlen] != '\0')
+	{
 		destlen++;
-	for (k = 0 ; scrlen[k] != '\0' ; k++)
-		srclen++;
-	for (k = 0 k ; <= srclen ; k++)
-		dest[destlen + 1] = scrlen[k];
+	}
+	while (src[scrlen] != '\0')
+	{
+		dest[destlen] = src[scrlen];
+		destlen++;
+		scrlen++;
+	}
 	return (dest);
 }

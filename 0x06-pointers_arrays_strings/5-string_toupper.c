@@ -9,11 +9,11 @@ char *string_toupper(char *n)
 	int k;
 
 	k = 0;
-	while (n[k])
+	while (n[k] != '\0')
 	{
 		if (n[k] >= 'a' && n[k] <= 'z')
 			n[k] -= 32;
 		k++;
 	}
-	return (0);
+	return (n);
 }

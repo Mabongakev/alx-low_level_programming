@@ -23,6 +23,8 @@ int _prime(int n, int  m)
 	if (prime == n)
 		return (1);
 	else
+		return (m);
+	if (n < 0)
 		return (0);
 	return (_prime(n, m + 1));
 }

@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (0);
 	}
-	b = atoi(argv[1]);
+	a = atoi(argv[1]);
 	while (a > 0)
 	{
 		if (a >= 25)

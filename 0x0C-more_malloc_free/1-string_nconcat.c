@@ -1,9 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * string_nconcat -  function that concatenates two strings
+ * string_nconcat - function that concatenates two strings
  * @s1: string 1
  * @s2: string 2
  * @n: number of bytes to be concatenated
@@ -23,7 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (k = 0 ; s1[k] != '\0' ; k++)
 		s1len++;
 	for (k = 0 ; s2[k] != '\0' ; k++)
-		s1len++;
+		s2len++;
 	b = malloc(sizeof(char) * (s1len + n) + 1);
 	if (b == NULL)
 		return (NULL);

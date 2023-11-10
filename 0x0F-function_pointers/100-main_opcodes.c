@@ -6,36 +6,41 @@
  * @n: number of bytes
  * Return: void
  */
-void print_opcodes(int n, char *a)
+void print_opcodes(char *a, int n)
 {
-	int bytes, i;
-	char *arr;
+	int k;
 
+	for (k = 0 ; k < n ; k++)
+	{
+		printf("%.2hhx", a[k]);
+
+		if (k < n - 1)
+			printf(" ");
+	}
+	printf("\n");
+}
+/**
+ * main - print of opcode
+ * @argc: argument count
+ * @argv: argument vector
+ * Return: void
+ */
+int main(int argc, char *argv[])
+{
+	int n;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
 	}
-	bytes = atoi(argv[1]);
-	if (bytes < 0)
+	n = atoi(argv[1]);
+	if (n < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	arr = (char *)main;
-
-
-	for (i = 0; i < bytes; i++)
-	{
-		if (i == bytes - 1)
-		{
-			printf("%02hhx\n", arr[i]);
-			break;
-		}
-
-		printf("%02hhx ", arr[i]);
-	}
+	print_opcodes((char *)&main, n);
 	return (0);
 }
 

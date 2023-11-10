@@ -44,6 +44,7 @@ void print_all(const char *const format, ...)
 		}
 		if (format[k + 1] != '\0' && l == 0)
 			printf(", ");
+		k++;
 	}
 	printf("\n");
 	va_end(ls);

@@ -6,11 +6,9 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t elements;
+	size_t elements = 0;
 
-	elements = 0;
-
-	while (h != NULL)
+	while (h)
 	{
 		if (h->str == NULL)
 			printf("[0] (nil)\n");

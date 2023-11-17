@@ -1,4 +1,7 @@
 #include "lists.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 /**
  * print_list - print all nodes of the list
  * @h: head of the singly data
@@ -8,7 +11,7 @@ size_t print_list(const list_t *h)
 {
 	size_t elements = 0;
 
-	while (h)
+	while (h != NULL)
 	{
 		if (h->str == NULL)
 			printf("[0] (nil)\n");
